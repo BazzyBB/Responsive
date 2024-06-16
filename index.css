@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+ }
+ /* Header/NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1em 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 0.846875rem;
+}
+
+.navbar .logo img {
+    height: 23.12px; 
+    margin-right: .2em;
+}
+.navbar .logo a,
+ .navbar .nav-links a{
+    font-weight: bold;
+     text-decoration: none;
+    color: black;
+}
+ .navbar .nav-links {
+     display: flex;
+    gap: 20px;
+    font-size: .75rem;
+    font-weight: 600; 
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    font-size: .75rem;
+}
+.footer h2 {
+    margin: 0;
+    font-size: .75rem;
+}
+.footer p {
+    margin: 5px 0 0;
+    font-size: .75rem;
+    padding-bottom: .5em;
+}
+.footLink a  {
+  justify-content: center;
+    gap: 2em;
+    text-decoration: none;
+    color: white;
+}
+.footLink a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* JSX prop component */
+.mobile-blog{
+    width: 374px;
+    margin: 0 auto;
+}   
+.mobile-blog > h5{
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+.mobile-blog > h2{
+    margin-top:  .4em;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.mobile-blog > p{
+    margin-top: .5em;
+    color: #505050;
+    margin-bottom: 2em;
+    }
+/* Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+ /*Design One  */
+.hero-1 {
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 1em;
+    text-align: center;
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+.text-overlay h6,
+.text-overlay h2,
+.text-overlay p {
+    margin: 0.5em 0;
+    width: 90%; 
+}
+
+.grid-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.view-more {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:3em;
+    margin: 0;
+    text-decoration: underline;
+}
+
+
+/* design three */
+.design-two-container{
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1em;
+}
+.design-two-hero{
+    margin: 0 auto;
+}
+
+.design-two-hero > h6{
+    margin-bottom: 0;
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.design-two-hero > h2{
+    margin-top: .5em;
+    margin-bottom: 0;
+    width: 351px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.design-two-hero > p{
+    margin-bottom: 2em;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#hero-image-2 {
+        width: 90vw;
+        margin: 0 auto;
+        display: block;
+    }
+.recent-post{
+    text-align: center;
+    font-weight: 600;
+    margin: 2em 0 1.5em 0;
+    font-size: 1.5rem;
+}
+.design-two-body{
+    max-width: 844px;
+    margin: 0 auto;
+}
+.design-two-body > h5{
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* Design Three */
+   .design-three-container{
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1em;
+}
+    .design-three-hero >img {
+    padding-top: 1em;
+}
+.design-three-hero > h1{
+    font-size: 2.1775rem;
+    font-weight: 700;
+}
+.design-three-hero > p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3em;
+}
+.design-three-body > h1{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}    
+@media (min-width: 476px){
+    /* design One */
+    .text-overlay > p{
+        font-size: 1rem;
+        
+    }
+    .text-overlay > h6{
+        font-size: 1rem;
+    }
+    .text-overlay > h2{
+        font-size: 2.5rem; 
+    }
+
+    .grid-desktop{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+/*  Design Two */
+    .design-two-hero {
+      width: 100%;
+    }
+    .design-two-hero >h2 {
+      width: 100%;
+      font-size: 2.25rem;
+    }
+    .display-grid-2{
+        display: flex;
+        
+    }
+.design-two-body,
+.design-two-hero{
+    max-width: 83%;
+    }
+    
+    .design-two-body > h5{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+    .design-two-body > p{
+    font-weight: 400;
+    font-size: 1.143125rem;
+    margin-bottom: 0;
+}
+
+.design-two-body >h5:nth-of-type(2){
+    margin-top: .75em;
+}
+/* Design 3 */
+
+    .design-three-hero{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .design-three-hero > h1{
+        margin-bottom: 0;
+        font-size: 2.25rem;
+    }
+    .design-three-hero > h1,
+    .design-three-hero > p {
+        width: 95%;
+    }
+   .design-three-image{
+    object-fit: contain;
+    padding-right: 2em;
+    padding-left: 2em;
+   }
+    .flex{
+        display: flex;
+        margin-top: 4em;
+    }
+    .display-grid-three{
+        display: flex;
+    }
+    .design-three-body{
+        width: 73%;
+        margin: 0 auto;
+        margin-top: 3em;
+        margin-bottom: 0;
+    }
+    
+}
+
+
+
+
