@@ -304,6 +304,7 @@ body {
     .grid-desktop-2-3{
         display: grid;
         grid-template: 1fr / 1fr 1fr 1fr;
+        margin-bottom: 2em;
     }
 }
 
