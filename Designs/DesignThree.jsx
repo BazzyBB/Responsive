@@ -52,7 +52,7 @@ export default function DesignThree() {
                     </p>
                 </div>
                 <p className="recent-post" tabIndex="0">Recent posts</p>
-                <div className="display-grid-three">
+                <div className="grid-desktop">
                     <MobileBlog
                         source={blogPlaceHolder}
                         date="June 5, 2024"
