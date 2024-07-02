@@ -139,7 +139,8 @@ body {
     width: 90%; 
 }
 
-.grid-desktop {
+.grid-desktop,
+.grid-desktop-2-3{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
