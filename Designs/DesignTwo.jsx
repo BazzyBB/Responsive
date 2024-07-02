@@ -52,7 +52,7 @@ export default function DesignTwo() {
                     </p>
                 </div>
                 <p className="recent-post" tabIndex="0">Recent posts</p>
-                <div className="display-grid-2">
+                <div className="grid-desktop">
                     <MobileBlog
                         source={blogPlaceHolder}
                         date="June 5, 2024"
