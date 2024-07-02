@@ -146,7 +146,6 @@ body {
     justify-content: center;
     margin-bottom: 0;
 }
-
 .view-more {
     text-align: center;
     font-weight: bold;
@@ -252,10 +251,6 @@ body {
       width: 100%;
       font-size: 2.25rem;
     }
-    .display-grid-2{
-        display: flex;
-        
-    }
 .design-two-body,
 .design-two-hero{
     max-width: 83%;
@@ -300,16 +295,16 @@ body {
         display: flex;
         margin-top: 4em;
     }
-    .display-grid-three{
-        display: flex;
-    }
     .design-three-body{
         width: 73%;
         margin: 0 auto;
         margin-top: 3em;
         margin-bottom: 0;
     }
-    
+    .grid-desktop-2-3{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
 }
 
 
